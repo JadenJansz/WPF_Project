@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_Project.SuccessNoti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Title="SuccessNoti" Height="80" Width="320" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="SeaGreen" ResizeMode="NoResize" >
+    <Grid>
+        <materialDesign:PackIcon Kind="TickCircleOutline" Width="46" Opacity="0.6" Height="50" Foreground="White" RenderTransformOrigin="9.192,6.569" Margin="18,14,0,0"/>
+        <Label x:Name="lbl_save" Foreground="White" Opacity="0.6" FontSize="14" HorizontalAlignment="Center" Margin="75,26,23,19" VerticalAlignment="Center" Height="35" Width="222"/>
+
+    </Grid>
+</Window>

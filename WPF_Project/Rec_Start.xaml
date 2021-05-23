@@ -1,0 +1,99 @@
+﻿<Window x:Class="WPF_Project.Rec_Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Height="450" Width="800" Background="#222222" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid>
+        <Image Source="images/logo.png" Margin="572,0,0.6,338" Opacity="0.2"/>
+        <Image Source="images/ocean1.png" Margin="408,134,0.6,0" Opacity="0.2"/>
+        <TextBlock Margin="10,2,446.6,338" FontSize="48" TextAlignment="Center" Foreground="White" Opacity="0.8">Select Process</TextBlock>
+        <Button x:Name="btn_available" Content="Room Availability" Margin="73,87,71.6,270" FontSize="28" Click="btn_available_Click" Foreground="White" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="600" Height="50" CornerRadius="15" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_book" Content="Book a Room" Margin="89,179,84.6,177" FontSize="28" Click="btn_book_Click" Foreground="White" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="600" Height="50" CornerRadius="15" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_edit" Margin="45,272,40,71.6" FontSize="28" Content="Edit Guest" Click="btn_edit_Click" Foreground="White" >
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="600" Height="50" CornerRadius="15" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="Sign Out" Margin="619,353,9.6,10" Foreground="Black" FontSize="24" Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="150" Height="50" CornerRadius="15" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+
+
+
+
+</Window>

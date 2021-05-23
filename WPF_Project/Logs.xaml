@@ -1,0 +1,94 @@
+﻿<Window x:Class="WPF_Project.Logs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Project"
+        mc:Ignorable="d"
+        Height="555.314" Width="800" Background="#222222" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="images/logo.png" Margin="574,0,0.6,427.6" Opacity="0.2"/>
+        <DataGrid x:Name="grid_log" HorizontalAlignment="Left" Height="271" Margin="13,176,0,0" VerticalAlignment="Top" Width="771" Foreground="White" FontSize="18" Background="#FF595757"/>
+        <Button x:Name="btn_cus" Content="Customer Logs" Foreground="White" HorizontalAlignment="Left" Margin="38,98,0,0" VerticalAlignment="Top" Width="201" Height="57" FontSize="20" Click="btn_cus_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="170" Height="55" CornerRadius="15" Background="{TemplateBinding Background}" Margin="-8,-5,21.2,-11">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_logs" Content="Room Logs" Foreground="White" HorizontalAlignment="Left" Margin="574,98,0,0" VerticalAlignment="Top" Width="196" Height="57" FontSize="20" Click="btn_logs_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="170" Height="55" CornerRadius="15" Background="{TemplateBinding Background}" Margin="-8,-5,21.2,-11">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_user" Content="User Logs" HorizontalAlignment="Left" Foreground="White" VerticalAlignment="Top" Width="240" Margin="278,98,0,0" Height="57" FontSize="22" Click="btn_user_Click_1">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="170" Height="55" CornerRadius="15" Background="{TemplateBinding Background}" Margin="-8,-5,21.2,-11">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Logs" Foreground="White" FontSize="48" Opacity="0.8" HorizontalAlignment="Left" Margin="13,0,0,0" VerticalAlignment="Top" Height="85"/>
+        <Button x:Name="btn_back" Content="Back" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="13,452,0,0" VerticalAlignment="Top" Width="157" Click="btn_back_Click" Height="67">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#0C71E0"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#094C72"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="40" Width="130" CornerRadius="15" Background="{TemplateBinding Background}" Margin="-30,6,-20,-0.2">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
